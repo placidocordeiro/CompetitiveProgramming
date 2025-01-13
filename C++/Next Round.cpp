@@ -12,7 +12,7 @@ int main() {
     }
 
     for(int score : scores) {
-        if(score >= scores[k-1]) count++;
+        if(score >= scores[k-1] && score > 0) count++;
     }
 
     std::cout << count;
