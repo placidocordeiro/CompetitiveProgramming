@@ -1,38 +1,48 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# Compiled objects
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.out
+*.exe
 *.a
-*.lib
+*.so
+*.dll
+*.dylib
 
 # Executables
-*.exe
-*.out
-*.app
+*.bin
 
-# Input files
-*.txt
-
+# IDE and editor configurations
 .vscode/
-*.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Input/Output files
+input.txt
+output.txt
+*.in
+*.out
+run
+
+# Build directories
+build/
+dist/
+cmake_build/
+.cmake/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS specific
+Thumbs.db
+.DS_Store
