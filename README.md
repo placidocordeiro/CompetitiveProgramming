@@ -1,16 +1,10 @@
-# CompetitiveProgramming
+# Competitive Programming
 
-This repository contains my studies and practice for competitive programming. It includes implementations of various functionalities, data structures, algorithms, and solutions to problems I've worked on. The focus is on C and C++.
+Welcome to the Competitive Programming repository! This repository is dedicated to sharing resources, solutions, and insights related to competitive programming.
 
-## Contents
+## Introduction
+Competitive programming is a mind sport that involves solving well-defined algorithmic problems within a specified time limit. This repository aims to provide a collection of problems, solutions, and tutorials to help you improve your skills.
 
-- **Functionalities**: Small programs or snippets showcasing specific features or techniques.
-- **Data Structures**: Implementations of fundamental and advanced data structures.
-- **Algorithms**: Solutions and explanations for sorting, searching, dynamic programming, graph algorithms, and more.
-- **Problem Resolutions**: Solutions to competitive programming problems, categorized by difficulty or topic.
-- **Small projects**: Some projects I've worked on wich aren't expressive enough to put in a repository apart.
-
-## Programming Languages
-
-- **C**
-- **C++**
+## Resources
+- [Online Judges](https://www.codeforces.com/)
+- [Books](https://cses.fi/book/book.pdf)
