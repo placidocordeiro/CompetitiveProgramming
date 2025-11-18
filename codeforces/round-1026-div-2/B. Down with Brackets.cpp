@@ -1,51 +1,41 @@
 #include <iostream>
+#include <string>
 
-bool isBalanced(const std::string& s) {
-    if (s.empty()) return true;
-    int balance {0};
-    for (char c : s) {
-        if (c == '(') balance++;
-        else if (c == ')') balance--;
-        if (balance < 0) return false;
-    }
-    return (balance == 0) ? true : false;
-}
+void solve() {
+    std::string s;
+    std::cin >> s;
 
-void unbalancing(std::string& s) {
-    if (!isBalanced(s)) {
-        printf("YES\n");
-        return;
-    }
+    int n = s.length();
+    int balance = 0;
 
-    for (int i = 0; i < s.size(); i++) {
+    for (int i = 0; i < n; ++i) {
         if (s[i] == '(') {
-            std::string temp = s;
-            temp.erase(i);
-            for (int j = 0; j < temp.size(); j++) {
-                if (temp[j] == ')') {
-                    std::string temp1 = temp;
-                    temp1.erase(j);
-                    if (!isBalanced(temp1)) {
-                        printf("YES\n");
-                        return;
-                    }
-                }
-            }
+            balance++;
+        } else {
+            balance--;
+        }
+
+        if (balance == 0) {
+            if (i == n - 1) {
+                std::cout << "NO" << std::endl;
+            } 
+            else {
+                std::cout << "YES" << std::endl;
+            }            
+            return;
         }
     }
-    printf("NO\n");
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
     int t;
-    std::cin >> t;
-
-    for (int i = 0; i < t; i++) {
-        std::string s;
-        std::cin >> s;
-
-        unbalancing(s);
+    if (std::cin >> t) {
+        while (t--) {
+            solve();
+        }
     }
-
     return 0;
 }
